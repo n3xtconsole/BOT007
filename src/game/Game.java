@@ -58,5 +58,9 @@ public class Game {
                 deadPlayers.add(pp);
             }
         }
+        for(Player p:players){
+            p.isSafe = false;
+            p.willDie = false;
+        }
     }
 }

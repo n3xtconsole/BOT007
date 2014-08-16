@@ -9,10 +9,7 @@ import bot.RandomBot;
 import bot.Shooter;
 import java.util.ArrayList;
 
-/**
- *
- * @author tony
- */
+
 public class Main {
 
     ArrayList<Player> players;
@@ -27,6 +24,7 @@ public class Main {
         g.players.add(new RandomBot());
         while (!g.isOver()) {
             g.runRound();
+            System.out.println();
         }
     }
 
